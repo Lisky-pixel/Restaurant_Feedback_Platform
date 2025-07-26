@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rate Your Experience - Rate & Win</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Main compiled CSS -->
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+  <body>
+    <div id="rate-app-root">
+      <header
+        class="profile-header d-flex align-items-center"
+        style="background: #f44336; color: #fff; padding: 1.25rem 2rem"
+      >
+        <a
+          href="select-restaurant.html"
+          class="me-3 text-white"
+          style="font-size: 1.5rem; text-decoration: none"
+          ><i class="bi bi-arrow-left"></i
+        ></a>
+        <div>
+          <h2 class="mb-0" style="font-size: 1.25rem; font-weight: 600">
+            Rate Your Experience
+          </h2>
+          <div id="restaurantName" class="small" style="font-weight: 400">
+            Restaurant Name
+          </div>
+        </div>
+      </header>
+      <main
+        class="rate-main d-flex flex-column align-items-center"
+        style="padding: 2rem 0; min-height: 80vh"
+      >
+        <form id="rateForm" class="w-100" style="max-width: 1100px">
+          <div
+            class="rate-card bg-white p-4 mb-4"
+            style="
+              border-radius: 1.25rem;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <div class="fw-bold mb-1" style="color: #f44336">
+              <span style="font-size: 1.2rem">🍕</span> Food Quality
+            </div>
+            <div class="text-muted mb-3">
+              How was the taste, presentation, and freshness?
+            </div>
+            <div class="star-rating" data-category="food"></div>
+          </div>
+          <div
+            class="rate-card bg-white p-4 mb-4"
+            style="
+              border-radius: 1.25rem;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <div class="fw-bold mb-1" style="color: #3b4a5a">
+              <span style="font-size: 1.2rem">👥</span> Service
+            </div>
+            <div class="text-muted mb-3">
+              How was the staff friendliness and efficiency?
+            </div>
+            <div class="star-rating" data-category="service"></div>
+          </div>
+          <div
+            class="rate-card bg-white p-4 mb-4"
+            style="
+              border-radius: 1.25rem;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <div class="fw-bold mb-1" style="color: #2ecc71">
+              <span style="font-size: 1.2rem">🧼</span> Cleanliness
+            </div>
+            <div class="text-muted mb-3">
+              How clean were the tables, utensils, and restrooms?
+            </div>
+            <div class="star-rating" data-category="cleanliness"></div>
+          </div>
+          <div
+            class="rate-card bg-white p-4 mb-4"
+            style="
+              border-radius: 1.25rem;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <div class="fw-bold mb-1" style="color: #3b4a5a">
+              <span style="font-size: 1.2rem">🎵</span> Ambiance
+            </div>
+            <div class="text-muted mb-3">
+              How was the atmosphere, music, and lighting?
+            </div>
+            <div class="star-rating" data-category="ambiance"></div>
+          </div>
+          <div
+            class="rate-card bg-white p-4 mb-4"
+            style="
+              border-radius: 1.25rem;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <div class="fw-bold mb-1">Additional Comments (Optional)</div>
+            <div class="text-muted mb-3">
+              Share more details about your experience
+            </div>
+            <textarea
+              class="form-control"
+              rows="3"
+              placeholder="Tell us more about your dining experience..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-danger w-100 rounded-pill mb-2"
+            style="font-weight: 600"
+          >
+            Submit Feedback &amp; Earn Points!
+          </button>
+          <div class="text-center text-muted" style="font-size: 0.95rem">
+            You'll earn 40-60 points based on your detailed feedback
+          </div>
+        </form>
+      </main>
+    </div>
+    <!-- jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <!-- Rate Experience JS -->
+    <script src="js/rate-experience.js"></script>
+  </body>
+</html>

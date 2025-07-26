@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding - Rate & Win</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Main compiled CSS -->
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+  <body>
+    <div id="app-root">
+      <section class="onboarding-section centered-content text-center">
+        <div class="onboarding-navbar w-100">
+          <span class="progress-dot active"></span>
+          <span class="progress-dot"></span>
+          <span class="progress-dot"></span>
+        </div>
+        <div
+          class="onboarding-content flex-grow-1 d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="emoji-circle mx-auto mb-4" aria-label="Onboarding Emoji">
+            🏠🍕⭐
+          </div>
+          <div class="onboarding-headline mb-2">How it Works</div>
+          <div class="onboarding-description text-muted mb-4">
+            Rate your meal experience with simple emoji ratings and earn rewards
+            instantly.
+          </div>
+        </div>
+        <div
+          class="onboarding-footer w-100 d-flex justify-content-between align-items-center px-3"
+          style="
+            max-width: 500px;
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 2rem;
+          "
+        >
+          <button
+            class="btn btn-light btn-sm rounded-pill px-3"
+            id="onboardingBack"
+            disabled
+          >
+            Back
+          </button>
+          <div class="slide-counter small text-muted">1 of 3</div>
+          <button
+            class="btn btn-danger btn-sm rounded-pill px-3"
+            id="onboardingNext"
+          >
+            Next
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Onboarding JS -->
+    <script src="js/onboarding.js"></script>
+  </body>
+</html>

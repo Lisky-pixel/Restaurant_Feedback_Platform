@@ -1,0 +1,612 @@
+// Landing page component styles
+.icon-circle {
+  width: 120px;
+  height: 120px;
+  @include flex-center;
+  @include rounded-corners(50%);
+  background: $icon-gradient;
+  box-shadow: 0 4px 24px rgba(244, 67, 54, 0.08);
+  svg {
+    width: 96px;
+    height: 96px;
+    display: block;
+  }
+}
+
+.headline {
+  color: $primary-color;
+  letter-spacing: -1px;
+}
+
+.feature-list {
+  gap: 2rem;
+}
+
+.feature-item {
+  min-width: 72px;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: $primary-color;
+}
+
+.cta-button {
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: $button-radius;
+  box-shadow: 0 2px 8px rgba(244, 67, 54, 0.1);
+  transition: background 0.2s, box-shadow 0.2s;
+  &:hover,
+  &:focus {
+    background: $secondary-color;
+    box-shadow: 0 4px 16px rgba(255, 152, 0, 0.12);
+  }
+}
+
+.subtext {
+  margin-top: 0.5rem;
+  color: $muted-text-color;
+}
+
+// Onboarding component styles
+.onboarding-section {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.onboarding-navbar {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+.onboarding-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  width: 100%;
+}
+
+.onboarding-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  background: transparent;
+  padding: 0 2rem;
+}
+
+.slide-counter {
+  min-width: 80px;
+  text-align: center;
+}
+
+.onboarding-section > * {
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.emoji-circle {
+  width: 120px;
+  height: 120px;
+  font-size: 3.5rem;
+  @include flex-center;
+  @include rounded-corners(50%);
+  background: $background-gradient-start;
+  box-shadow: 0 2px 12px rgba(244, 67, 54, 0.08);
+  margin-bottom: 2rem;
+}
+
+.progress-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress-dot {
+  width: 32px;
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  display: inline-block;
+  transition: background 0.2s;
+}
+
+.progress-dot.active {
+  background: $primary-color;
+}
+
+.onboarding-headline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $primary-color;
+}
+
+.onboarding-description {
+  font-size: 1.05rem;
+  color: $muted-text-color;
+}
+
+.onboarding-nav {
+  margin-top: 2rem;
+}
+
+// Responsive adjustments
+@media (max-width: 900px) {
+  .onboarding-section {
+    max-width: 95vw;
+    padding: 2rem 1rem 1.5rem 1rem;
+  }
+  .emoji-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+}
+
+// Auth (Sign Up / Login) component styles
+.auth-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.auth-card {
+  background: #fff;
+  @include rounded-corners($card-radius);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-icon-circle {
+  width: 56px;
+  height: 56px;
+  @include flex-center;
+  @include rounded-corners(50%);
+  background: $icon-gradient;
+  box-shadow: 0 2px 8px rgba(244, 67, 54, 0.08);
+}
+
+.auth-headline {
+  color: $primary-color;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.auth-subtext {
+  color: $muted-text-color;
+  font-size: 1rem;
+}
+
+.auth-form .input-group-text {
+  background: #f8f9fa;
+  border: none;
+}
+
+.auth-form .form-control {
+  border-radius: 1.5rem;
+  font-size: 1rem;
+}
+
+.auth-form .form-label {
+  font-weight: 500;
+  color: $text-color;
+}
+
+.auth-form .password-toggle {
+  background: #f8f9fa;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-form .password-toggle i {
+  font-size: 1.1rem;
+  color: $muted-text-color;
+}
+
+.auth-form .btn-danger {
+  border-radius: $button-radius;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: $primary-color;
+  border: none;
+  transition: background 0.2s;
+}
+
+.auth-form .btn-danger:hover,
+.auth-form .btn-danger:focus {
+  background: $secondary-color;
+}
+
+.auth-footer {
+  color: $muted-text-color;
+}
+
+.auth-footer a {
+  color: $primary-color;
+  text-decoration: underline;
+}
+
+.auth-switch a {
+  color: $secondary-color;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+// Dashboard component styles
+.dashboard-container {
+  min-height: 100vh;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.dashboard-header {
+  background: $primary-color;
+  color: white;
+  padding: 1.5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.dashboard-header-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-stats-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.welcome-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.user-stats {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 2.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  min-width: 120px;
+  flex: 1 1 0;
+  max-width: 33.33%;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.7rem;
+  opacity: 0.9;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.dashboard-main {
+  padding: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  text-align: center;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+}
+
+.action-btn i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-text {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.btn-subtitle {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 0.25rem;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-summary-card {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.stat-summary-card i {
+  font-size: 1.5rem;
+  color: $primary-color;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $text-color;
+}
+
+.stat-text {
+  display: block;
+  font-size: 0.8rem;
+  color: $muted-text-color;
+  margin-top: 0.25rem;
+}
+
+.recent-feedback {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.recent-feedback h3 {
+  color: $text-color;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.recent-feedback h3 i {
+  margin-right: 0.5rem;
+}
+
+.section-subtitle {
+  color: $muted-text-color;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.feedback-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 0.5rem;
+}
+
+.feedback-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feedback-info i {
+  color: $primary-color;
+}
+
+.restaurant-name {
+  font-weight: 600;
+  color: $text-color;
+  font-size: 0.9rem;
+}
+
+.rating {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.rating i {
+  color: $primary-color;
+  font-size: 0.8rem;
+}
+
+.feedback-status {
+  text-align: right;
+}
+
+.status {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.status.approved {
+  color: #28a745;
+}
+
+.status.pending {
+  color: #ffc107;
+}
+
+.points {
+  display: block;
+  font-size: 0.7rem;
+  color: $muted-text-color;
+}
+
+.restaurant-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+  transition: box-shadow 0.25s, transform 0.25s, background 0.25s;
+}
+
+.restaurant-card:hover {
+  box-shadow: 0 12px 32px rgba(244, 67, 54, 0.15);
+  transform: translateY(-6px) scale(1.04);
+  background: #fff3f0;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// Dark mode styles
+[data-theme="dark"] {
+  .dashboard-container {
+    background: #1a1a1a;
+    color: #fff;
+  }
+
+  .dashboard-header {
+    background: #2d2d2d;
+  }
+
+  .stat-summary-card,
+  .recent-feedback {
+    background: #2d2d2d;
+    color: #fff;
+  }
+
+  .feedback-item {
+    background: #3a3a3a;
+  }
+
+  .restaurant-name {
+    color: #fff;
+  }
+
+  .stat-number {
+    color: #fff;
+  }
+
+  .recent-feedback h3 {
+    color: #fff;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 900px) {
+  .dashboard-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .user-stats-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .stat-card {
+    min-width: 100px;
+    padding: 0.75rem 1.5rem;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .action-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .user-stats {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rate & Win - Restaurant Feedback Platform</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Main compiled CSS -->
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+  <body>
+    <div id="app-root">
+      <main class="welcome-section centered-content">
+        <section class="intro-content text-center">
+          <div class="icon-circle mx-auto mb-4">
+            <!-- Placeholder for restaurant icon (SVG or image) -->
+            <svg
+              width="96"
+              height="96"
+              viewBox="0 0 96 96"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Dining Plate Icon"
+            >
+              <circle cx="48" cy="48" r="48" fill="url(#iconGradient)" />
+              <g>
+                <rect
+                  x="36"
+                  y="36"
+                  width="24"
+                  height="24"
+                  rx="12"
+                  fill="#fff"
+                />
+                <rect
+                  x="44"
+                  y="44"
+                  width="8"
+                  height="8"
+                  rx="4"
+                  fill="#f44336"
+                />
+                <rect x="32" y="44" width="4" height="16" rx="2" fill="#888" />
+                <rect x="60" y="44" width="4" height="16" rx="2" fill="#888" />
+              </g>
+              <defs>
+                <linearGradient
+                  id="iconGradient"
+                  x1="0"
+                  y1="0"
+                  x2="96"
+                  y2="96"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#f44336" />
+                  <stop offset="1" stop-color="#ff9800" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h1 class="headline display-4 fw-bold mb-2">Rate &amp; Win</h1>
+          <p class="lead text-muted mb-4">
+            Get rewarded for your honest dining reviews.<br />Join now and start
+            earning!
+          </p>
+          <div class="feature-list d-flex justify-content-center gap-4 mb-4">
+            <div class="feature-item text-center">
+              <span class="feature-icon d-block mb-1"
+                ><i class="bi bi-star"></i
+              ></span>
+              <span class="feature-label">Rate</span>
+            </div>
+            <div class="feature-item text-center">
+              <span class="feature-icon d-block mb-1"
+                ><i class="bi bi-gift"></i
+              ></span>
+              <span class="feature-label">Earn</span>
+            </div>
+            <div class="feature-item text-center">
+              <span class="feature-icon d-block mb-1"
+                ><i class="bi bi-share"></i
+              ></span>
+              <span class="feature-label">Share</span>
+            </div>
+          </div>
+          <a
+            href="onboarding.html"
+            class="cta-button btn btn-danger btn-lg rounded-pill px-5 mb-3"
+            >Start Rating &amp; Winning!</a
+          >
+          <p class="subtext text-muted small">
+            Join thousands of Kenyan food lovers earning airtime and rewards for
+            their feedback
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
