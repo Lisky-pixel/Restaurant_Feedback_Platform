@@ -1,5 +1,7 @@
 {
-  "/api/users": "/users",
-  "/api/restaurants": "/restaurants",
-  "/api/feedback": "/feedback"
+  "/login": "/users",
+  "/signup": "/users",
+  "/profile": "/users",
+  "/restaurants": "/restaurants",
+  "/rate": "/ratings"
 }
