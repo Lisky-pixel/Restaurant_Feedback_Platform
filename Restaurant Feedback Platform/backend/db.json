@@ -2,51 +2,55 @@
   "users": [
     {
       "id": 1,
-      "name": "Alberta Logozaga",
-      "email": "albertaweywoni@gmail.com",
-      "theme": "dark",
-      "points": 90
+      "username": "alberta",
+      "email": "alberta@gmail.com",
+      "password": "password123"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Nyama Choma Hub",
+      "location": "Nairobi",
+      "category": "Kenyan",
+      "image": "assets/images/nyama_choma.jpg"
     },
     {
       "id": 2,
-      "name": "Kojo Mensah",
-      "email": "kojomensah@gmail.com",
-      "theme": "light",
-      "points": 40
+      "name": "Ugali Delight",
+      "location": "Mombasa",
+      "category": "Kenyan",
+      "image": "assets/images/ugali.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sukuma Bistro",
+      "location": "Kisumu",
+      "category": "Kenyan",
+      "image": "assets/images/sukuma.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Matoke Palace",
+      "location": "Nakuru",
+      "category": "Kenyan",
+      "image": "assets/images/matoke.jpg"
     }
   ],
-  "feedback": [
+  "ratings": [
     {
       "id": 1,
       "userId": 1,
-      "message": "Amazing food and fast service!",
+      "restaurantId": 1,
       "rating": 5,
-      "timestamp": "2025-07-27T10:30:00Z",
-      "status": "pending",
-      "response": null
+      "comment": "Nyama Choma was grilled to perfection!"
     },
     {
       "id": 2,
-      "userId": 2,
-      "message": "The app was slow to load.",
-      "rating": 3,
-      "timestamp": "2025-07-28T14:20:00Z",
-      "status": "responded",
-      "response": "We are improving speed. Thank you!"
-    }
-  ],
-  "rewards": [
-    {
-      "id": 1,
-      "title": "10% Discount",
-      "description": "Enjoy 10% off your next meal",
-      "pointsRequired": 50
-    },
-    {
-      "id": 2,
-      "title": "Free Soft Drink",
-      "description": "Get a soft drink on your next visit",
-      "pointsRequired": 30
+      "userId": 1,
+      "restaurantId": 2,
+      "rating": 4,
+      "comment": "Loved the Ugali, so soft and fresh."
     }
   ]
 }
