@@ -1,64 +1,26 @@
-const jsonServer = require('json-server');
+const jsonServer = require("json-server");
 const server = jsonServer.create();
-const path = require('path');
-const router = jsonServer.router(path.join(__dirname, 'db.json'));
+const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
-const fs = require('fs');
+const bodyParser = require("body-parser");
 
 server.use(middlewares);
-server.use(jsonServer.bodyParser);
+server.use(bodyParser.json());
 
-// Login Simulation
-server.post('/api/login', (req, res) => {
+// Custom login endpoint
+server.post("/login", (req, res) => {
   const { email, password } = req.body;
-  const db = JSON.parse(fs.readFileSync(path.join(__dirname, 'db.json'), 'utf-8'));
-  const user = db.users.find(u => u.email === email && u.password === password);
-
+  const users = router.db.get("users").value();
+  const user = users.find(u => u.email === email && u.password === password);
   if (user) {
-    const { password, ...safeUser } = user;
-    res.status(200).json({
-      success: true,
-      message: 'Login successful',
-      user: safeUser
-    });
+    res.status(200).json({ success: true, user });
   } else {
-    res.status(401).json({
-      success: false,
-      message: 'Invalid email or password'
-    });
+    res.status(401).json({ success: false, message: "Invalid credentials" });
   }
-});
-
-// Register Simulation
-server.post('/api/signup', (req, res) => {
-  const { fullName, email, password } = req.body;
-  const dbFile = path.join(__dirname, 'db.json');
-  const db = JSON.parse(fs.readFileSync(dbFile, 'utf-8'));
-
-  if (db.users.find(u => u.email === email)) {
-    res.status(400).json({ success: false, message: 'Email already exists' });
-    return;
-  }
-
-  const newUser = {
-    id: Date.now(),
-    fullName,
-    email,
-    password,
-    points: 0,
-    rewards: []
-  };
-
-  db.users.push(newUser);
-  fs.writeFileSync(dbFile, JSON.stringify(db, null, 2));
-  res.status(201).json({ success: true, user: newUser });
 });
 
 // Use default router
-server.use('/api', router);
-
-// Start server
-const PORT = 5000;
-server.listen(PORT, () => {
-  console.log(`JSON Server is running on http://localhost:${PORT}`);
+server.use(router);
+server.listen(3000, () => {
+  console.log("JSON Server is running on http://localhost:3000");
 });
