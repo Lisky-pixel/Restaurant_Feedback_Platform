@@ -1,0 +1,5 @@
+{
+  "/api/users": "/users",
+  "/api/restaurants": "/restaurants",
+  "/api/feedback": "/feedback"
+}
