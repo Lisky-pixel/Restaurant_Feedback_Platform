@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alberta Logozaga",
+      "email": "albertaweywoni@gmail.com",
+      "theme": "dark",
+      "points": 90
+    },
+    {
+      "id": 2,
+      "name": "Kojo Mensah",
+      "email": "kojomensah@gmail.com",
+      "theme": "light",
+      "points": 40
+    }
+  ],
+  "feedback": [
+    {
+      "id": 1,
+      "userId": 1,
+      "message": "Amazing food and fast service!",
+      "rating": 5,
+      "timestamp": "2025-07-27T10:30:00Z",
+      "status": "pending",
+      "response": null
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "message": "The app was slow to load.",
+      "rating": 3,
+      "timestamp": "2025-07-28T14:20:00Z",
+      "status": "responded",
+      "response": "We are improving speed. Thank you!"
+    }
+  ],
+  "rewards": [
+    {
+      "id": 1,
+      "title": "10% Discount",
+      "description": "Enjoy 10% off your next meal",
+      "pointsRequired": 50
+    },
+    {
+      "id": 2,
+      "title": "Free Soft Drink",
+      "description": "Get a soft drink on your next visit",
+      "pointsRequired": 30
+    }
+  ]
+}
