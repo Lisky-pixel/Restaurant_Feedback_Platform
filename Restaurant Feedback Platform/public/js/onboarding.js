@@ -2,19 +2,19 @@
 $(document).ready(function () {
   const onboardingSlides = [
     {
-      emoji: "🏠🍕⭐",
+      emoji: "<img src='assets/images/emoji.jpg' alt='How it Works' class='onboarding-image mb-4' style='max-width: 300px; height: auto;'>",
       headline: "How it Works",
       description:
         "Rate your meal experience with simple emoji ratings and earn rewards instantly.",
     },
     {
-      emoji: "💬📈👥",
+      emoji: "<img src='assets/images/feedback.jpg' alt='How it Works' class='onboarding-image mb-4' style='max-width: 300px; height: auto;'>",
       headline: "Why Your Feedback Matters",
       description:
         "Help restaurants in Kenya improve their service and create better dining experiences for everyone.",
     },
     {
-      emoji: "📱💰🎁",
+      emoji: "<img src='assets/images/reward.jpg' alt='How it Works' class='onboarding-image mb-4' style='max-width: 300px; height: auto;'>",
       headline: "Instant Airtime & Perks",
       description:
         "Get KSh airtime credited directly to your phone number plus exclusive restaurant deals.",

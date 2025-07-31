@@ -1,4 +1,4 @@
-# Restaurant Feedback Platform (Frontend)
+# Restaurant Feedback Platform 
 
 ##  Brief Description
 The **Restaurant Feedback Platform** is a responsive multi-page web application aimed at collecting and managing customer feedback through a smooth and interactive user experience. The app simulates real-world user flows from onboarding to dashboard access, with dynamic UI features and persistent user preferences.
@@ -35,8 +35,8 @@ Built entirely on the frontend with modular SASS, Bootstrap, and jQuery, the pla
 
 ##  Team Members
 
-- **Logozaga** – Authentication logic, Theme persistence  
 - **Nduka-aku Oluchi Rejoice** – Frontend structure, Slide navigation and styling
+- **Logozaga** – Authentication logic, Theme persistence  
 
 ---
 
@@ -108,20 +108,6 @@ Built entirely on the frontend with modular SASS, Bootstrap, and jQuery, the pla
 git clone https://github.com/Lisky-pixel/Restaurant_Feedback_Platform.git
 cd restaurant_feedback_platform
 ```
-### Install dependencies:
-```bash
-npm install
-```
-```bash
-npm install -g json-server
-```
-### Start the mock API server:
-```bash
-json-server --watch db.json --port 5000
-```
-### Open the frontend:
-- Launch `index.html` in your browser
-- Use Live Server extension in VS Code for best experience
 
 ## Deployed Webpage
 ➡ [View Live on GitHub Pages]()

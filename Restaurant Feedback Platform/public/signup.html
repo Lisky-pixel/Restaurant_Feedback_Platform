@@ -66,6 +66,7 @@
               </defs>
             </svg>
           </div>
+
           <h2 class="auth-headline text-center mb-1">Welcome!</h2>
           <p class="auth-subtext text-center mb-4">
             Create an account to start rating and winning
@@ -115,6 +116,26 @@
                 <span
                   class="input-group-text password-toggle"
                   style="cursor: pointer"
+                  title="Toggle password visibility"
+                  ><i class="bi bi-eye"></i
+                ></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                <input
+                  type="password"
+                  class="form-control password-input"
+                  id="signupConfirmPassword"
+                  placeholder="Confirm your password"
+                  required
+                />
+                <span
+                  class="input-group-text password-toggle"
+                  style="cursor: pointer"
+                  title="Toggle password visibility"
                   ><i class="bi bi-eye"></i
                 ></span>
               </div>
@@ -140,6 +161,10 @@
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Cookie Service -->
+    <script src="js/cookie-service.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
     <!-- Auth JS -->
     <script src="js/auth.js"></script>
   </body>

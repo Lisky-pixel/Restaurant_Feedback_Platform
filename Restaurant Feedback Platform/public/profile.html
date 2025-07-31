@@ -54,21 +54,28 @@
             <label class="form-label mb-1" style="font-weight: 500"
               >Full Name</label
             >
-            <div>John Mwangi</div>
+            <div id="userFullName">Loading...</div>
           </div>
           <div class="mb-3">
             <label class="form-label mb-1" style="font-weight: 500"
               >Email Address</label
             >
-            <div><i class="bi bi-envelope me-2"></i>john.mwangi@email.com</div>
+            <div id="userEmail"><i class="bi bi-envelope me-2"></i>Loading...</div>
           </div>
-          <div class="mb-4">
+          <div class="mb-3">
             <label class="form-label mb-1" style="font-weight: 500"
               >Username</label
             >
-            <div><i class="bi bi-person me-2"></i>johnmwangi</div>
+            <div id="userUsername"><i class="bi bi-person me-2"></i>Loading...</div>
+          </div>
+          <div class="mb-4">
+            <label class="form-label mb-1" style="font-weight: 500"
+              >Join Date</label
+            >
+            <div id="userJoinDate"><i class="bi bi-calendar me-2"></i>Loading...</div>
           </div>
           <button
+            id="updateProfileButton"
             class="btn btn-danger w-100 rounded-pill"
             style="font-weight: 600"
           >
@@ -76,6 +83,7 @@
           </button>
         </section>
         <button
+          id="signOutButton"
           class="btn btn-light w-100 mb-3"
           style="max-width: 600px; border-radius: 1.25rem; font-weight: 500"
         >
@@ -94,7 +102,11 @@
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Cookie Service -->
+    <script src="js/cookie-service.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <!-- Profile JS -->
+    <script src="js/profile.js"></script>
   </body>
 </html>

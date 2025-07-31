@@ -1,7 +1,0 @@
-{
-  "/login": "/users",
-  "/signup": "/users",
-  "/profile": "/users",
-  "/restaurants": "/restaurants",
-  "/rate": "/ratings"
-}
