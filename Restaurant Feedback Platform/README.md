@@ -110,7 +110,7 @@ cd restaurant_feedback_platform
 ```
 
 ## Deployed Webpage
-➡ [View Live on GitHub Pages]()
+➡ [View Live on Vercel](https://restaurant-feedback-platform.vercel.app/)
 
 ## Key Achievements
  Successfully implemented a fully functional mock backend
